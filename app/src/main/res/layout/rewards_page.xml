@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/fondo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="75dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnVolver"
+                android:layout_width="119dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:background="@color/transparent_color"
+                android:drawableStart="@drawable/ic_arrow_back_38px"
+                android:text="Volver"
+                android:textColor="@color/red"
+                android:textSize="18sp"
+                android:tint="@color/red"
+                app:drawableTint="@color/red" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="189dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:drawableStart="@drawable/ic_casino_20px"
+                android:text="Tienes 37 puntos"
+                android:textColor="@color/color_degraded"
+                android:textSize="20sp"
+                android:tint="@color/color_degraded"
+                app:drawableTint="@color/color_degraded"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/imageView4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView4"
+                app:layout_constraintVertical_bias="0.092" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Catálogo de Premios"
+                android:textColor="@color/blue"
+                android:layout_gravity="center_horizontal"
+                android:textSize="28sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/imageView4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView4"
+                app:layout_constraintVertical_bias="0.2" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BEBIDAS CALIENTES"
+                android:layout_gravity="center_horizontal"
+                android:textSize="24sp"
+                android:textColor="@color/blue"
+                android:drawableStart="@drawable/ic_outline_coffee_24"
+                android:tint="@color/blue"
+                app:drawableTint="@color/blue"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/imageView4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView4"
+                app:layout_constraintVertical_bias="0.092" />
+
+            <!-- Cuadros -->
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:rowCount="4"
+                android:alignmentMode="alignMargins"
+                android:columnOrderPreserved="false">
+
+                <!-- Cuadro 1 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center_horizontal"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/capuchino" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="CAPUCHINO CLASSIC"
+                        android:textColor="@color/gray"
+                        android:textSize="18sp" />
+
+                    <!-- Botones -->
+                    <Spinner
+                        android:id="@+id/spinnerOptions1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/options_array"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/skyDegraded"/>
+                </LinearLayout>
+
+                <!-- Cuadro 2 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center_horizontal"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/moccachino" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="MOCCACHINO CLASSIC"
+                        android:textColor="@color/gray"
+                        android:textSize="18sp" />
+
+                    <!-- Botones -->
+                    <Spinner
+                        android:id="@+id/spinnerOptions2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/options_array"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/skyDegraded"/>
+                </LinearLayout>
+
+                <!-- Cuadro 3 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center_horizontal"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/capuchinov" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="CAPUCHINO VAINILLA"
+                        android:textColor="@color/gray"
+                        android:textSize="18sp" />
+
+                    <!-- Botones -->
+                    <Spinner
+                        android:id="@+id/spinnerOptions3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/options_array"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/skyDegraded"/>
+                </LinearLayout>
+
+                <!-- Cuadro 4 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center_horizontal"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/moccachinod" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="MOCCACHINO CHOCOLATE"
+                        android:textColor="@color/gray"
+                        android:textSize="18sp" />
+
+                    <!-- Botones -->
+                    <Spinner
+                        android:id="@+id/spinnerOptions4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/options_array"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/skyDegraded"/>
+                </LinearLayout>
+
+                <!-- Cuadro 5 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center_horizontal"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/chocolatec" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CHOCOLATE CALIENTE"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/gray"
+                        android:textSize="18sp" />
+
+                    <!-- Botones -->
+                    <Spinner
+                        android:id="@+id/spinnerOptions5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/options_array"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/skyDegraded"/>
+                </LinearLayout>
+
+                <!-- Cuadro 6 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center_horizontal"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/expressod" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="EXPRESSO DOUBLE INTENSE"
+                        android:textColor="@color/gray"
+                        android:textSize="18sp" />
+
+                    <!-- Botones -->
+                    <Spinner
+                        android:id="@+id/spinnerOptions6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/options_array"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/skyDegraded"/>
+                </LinearLayout>
+
+            </GridLayout>
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BEBIDAS FRIAS"
+                android:layout_gravity="center_horizontal"
+                android:textSize="24sp"
+                android:textColor="@color/blue"
+                android:drawableStart="@drawable/ic_outline_sports_bar_24"
+                android:tint="@color/blue"
+                app:drawableTint="@color/blue"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/imageView4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView4"
+                app:layout_constraintVertical_bias="0.092" />
+
+            <!-- Cuadros -->
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:rowCount="4"
+                android:alignmentMode="alignMargins"
+                android:columnOrderPreserved="false">
+
+                <!-- Cuadro 7 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center_horizontal"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/chai" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CHAI HELADO"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/gray"
+                        android:textSize="18sp" />
+
+                    <!-- Botones -->
+                    <Spinner
+                        android:id="@+id/spinnerOptions7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/options_array"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/skyDegraded"/>
+                </LinearLayout>
+
+                <!-- Cuadro 8 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center_horizontal"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/matcha" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MATCHA HELADO"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/gray"
+                        android:textSize="18sp" />
+
+                    <!-- Botones -->
+                    <Spinner
+                        android:id="@+id/spinnerOptions8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/options_array"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/skyDegraded"/>
+                </LinearLayout>
+
+                <!-- Cuadro 9 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center_horizontal"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/naranja" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="JUGO DE NARANJA"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/gray"
+                        android:textSize="18sp" />
+
+                    <!-- Botones -->
+                    <Spinner
+                        android:id="@+id/spinnerOptions9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/options_array"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/skyDegraded"/>
+
+                </LinearLayout>
+
+                <!-- Cuadro 10 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center_horizontal"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/dragon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DRAGON TEA"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/gray"
+                        android:textSize="18sp" />
+
+                    <!-- Botones -->
+                    <Spinner
+                        android:id="@+id/spinnerOptions10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/options_array"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/skyDegraded"/>
+
+                </LinearLayout>
+
+                <!-- Cuadro 11 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center_horizontal"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/cafehelado" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="CAFE HELADO Y CREMA"
+                        android:textColor="@color/gray"
+                        android:textSize="18sp" />
+
+                    <!-- Botones -->
+                    <Spinner
+                        android:id="@+id/spinnerOptions11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/options_array"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/skyDegraded"/>
+                </LinearLayout>
+
+                <!-- Cuadro 12 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center_horizontal"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/mango" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MANGO COOL SHAKE"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/gray"
+                        android:textSize="18sp" />
+
+                    <!-- Botones -->
+                    <Spinner
+                        android:id="@+id/spinnerOptions12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/options_array"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/skyDegraded"/>
+                </LinearLayout>
+
+            </GridLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

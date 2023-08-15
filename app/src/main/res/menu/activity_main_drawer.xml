@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item android:id="@+id/nav_item_one"
+            android:icon="@drawable/ic_contract_48px"
+            android:title="Tus Registros"/>
+        <item android:id="@+id/nav_item_two"
+            android:icon="@drawable/ic_flag_circle_48px"
+            android:title="Tus Metas"/>
+        <item android:id="@+id/nav_item_three"
+            android:icon="@drawable/ic_book_online_48px"
+            android:title="Tus Puntos"/>
+
+        <item android:title="Configuracion">
+            <menu>
+                <item android:id="@+id/nav_item_six"
+                    android:icon="@drawable/ic_account_circle_48px"
+                    android:title="Cuenta"/>
+                <item android:id="@+id/nav_item_seven"
+                    android:icon="@drawable/ic_contact_support_48px"
+                    android:title="Soporte"/>
+            </menu>
+        </item>
+    </group>
+</menu>

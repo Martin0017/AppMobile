@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">PowerFIT</string>
+    <string name="navegation_drawer_open">Open</string>
+    <string name="avegation_drawer_close">Close</string>
+
+    <string name="tab_1">Actividades</string>
+    <string name="tab_2">Recompensas</string>
+
+    <string-array name="options_array">
+        <item>Canjea tus puntos...</item>
+        <item>Canjear bebida -10pts</item>
+    </string-array>
+
+    <string-array name="options_array2">
+        <item>Canjea tus puntos...</item>
+        <item>Canjear Postre -10pts</item>
+    </string-array>
+</resources>
